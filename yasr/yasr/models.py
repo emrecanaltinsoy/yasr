@@ -1,6 +1,6 @@
 import sys
-from yasr.logger import logger
 from pydantic import BaseModel, validator
+from yasr.logger import logger
 
 
 class Answers(BaseModel):

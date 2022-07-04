@@ -7,8 +7,6 @@ backend_packages = [
     "python_plugins.setup_py",
     "pants.backend.python.lint.black",
     "pants.backend.python.typecheck.mypy",
-    "pants.backend.python.lint.flake8",
-    "pants.backend.python.lint.isort",
     "pants.backend.python.lint.docformatter",
 ]
 

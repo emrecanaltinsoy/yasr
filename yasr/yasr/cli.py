@@ -1,12 +1,11 @@
 import sys
-import shutil
 from pathlib import Path
 from typing import Dict, List
 from PyInquirer import prompt
-from typer import Typer, Option, echo
 from tqdm import tqdm
-from yasr.models import Answers, questions
+from typer import Typer
 from yasr.logger import logger
+from yasr.models import Answers, questions
 
 app = Typer()
 
@@ -21,7 +20,12 @@ def change_string(file_paths: List[str], answers: Answers) -> None:
             source_text = f.read()
 
         with open(file_path, "w") as f:
-            f.write(source_text.replace(answers.source_str, answers.target_str))
+            f.write(
+                source_text.replace(
+                    answers.source_str,
+                    answers.target_str,
+                )
+            )
 
         if answers.backup:
             with open(f"{file_path}.bak", "w") as f:
