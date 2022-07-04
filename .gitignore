@@ -3,5 +3,5 @@
 /dist/
 /.pids
 
-
+.vscode
 test
