@@ -20,7 +20,7 @@ python_distribution(
     #
     # [setup-py-generation]
     # generate_setup_default = false
-    wheel=False,
+    wheel=True,
     generate_setup=True,
     # repositories=["@codeartifact"]
 )
