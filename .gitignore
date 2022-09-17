@@ -1,4 +1,5 @@
 # Pants workspace files
+**/__pycache__
 /.pants.*
 /dist/
 /.pids
